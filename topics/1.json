@@ -6,26 +6,10 @@
             "data": [
                 {
                     "text": "Разработка диаграммы",
-                    "class": "md-title"
+                    "class": "md-title",
+                    "link": "https://github.com/EniLyks/EniLyks-page/blob/master/app/about/about.template.html"
                 }
             ]
-        },
-        {
-            "type": "text",
-            "data": [
-                {
-                    "text": "Диаграмма создана с помощью "
-                },
-                {
-                    "text": "PlantUML",
-                    "link": "https://plantuml.com"
-                }
-            ]
-        },
-        
-        {
-            "type": "image",
-            "data": "img/use-case-diagram.png"
         }
         
     ]
