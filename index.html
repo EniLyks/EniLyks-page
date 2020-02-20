@@ -13,6 +13,14 @@
   <link rel="import" href="/labText.html">
 </head>
 
+  function viewLab1(){
+        <script>
+      var link = document.querySelector('link[rel=import]');
+      var content = link.import.querySelector('#labText-dm');
+      document.body.appendChild(content.cloneNode(true));
+    </script>
+}
+  
 <body ng-controller="AppController">
 
   <md-toolbar layout="row" class="md-toolbar-tools">
@@ -38,11 +46,8 @@
     <md-content flex id="content">
       <div ng-view></div>
       
-     <script>
-      var link = document.querySelector('link[rel=import]');
-      var content = link.import.querySelector('#labText-dm');
-      document.body.appendChild(content.cloneNode(true));
-    </script>
+        <button onClick="viewLab1()">Lab1</button>
+
       
     </md-content>
 
