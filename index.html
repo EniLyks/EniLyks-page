@@ -12,13 +12,6 @@
   
   <link rel="import" href="/labText.html">
   
-    function viewLab1(){
-
-      var link = document.querySelector('link[rel=import]');
-      var content = link.import.querySelector('intro-dm');
-      document.body.appendChild(content.cloneNode(true));
-
-    }
 </head>
   
 <body ng-controller="AppController">
@@ -46,13 +39,12 @@
     <md-content flex id="content">
       <div ng-view></div>
       
-        <button onClick="viewLab1()">Lab1</button>
-         <button>Lab2</button>
-        <button>Lab3</button>
-        <button>Lab4</button>
-        <button>Lab5</button>
-        <button>Lab6</button>
-        <button>Lab7</button>
+         <script>
+      var link = document.querySelector('link[rel=import]');
+      var content = link.import.querySelector('#intro-dm');
+      document.body.appendChild(content.cloneNode(true));
+    </script>
+      
     </md-content>
 
   </div>
